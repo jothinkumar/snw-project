@@ -5,11 +5,31 @@ import "./style.css"
 
 <nav>
 <h1>My Real Estate</h1>
-<ul id="navbar-opts">
-    <OptLink data="buy">Buy</OptLink>
-    <OptLink data="sell">Sell</OptLink>
-    <OptLink data="rent">Rent</OptLink>
-</ul>
+<div id="navbar-opts">
+    <OptLink data="buy" name="Buy">
+        <ul>
+            <li>Houses</li>
+            <li>Flats</li>
+            <li>Apartments</li>
+            <li>Cars</li>
+        </ul>
+    </OptLink>
+    <OptLink data="sell" name="Sell">
+        <ul>
+            <li>Houses</li>
+            <li>Flats</li>
+            <li>Apartments</li>
+            <li>Cars</li>
+        </ul>
+    </OptLink>
+    <OptLink data="rent" name="Rent">
+        <ul>
+            <li>Houses</li>
+            <li>Flats</li>
+            <li>Apartments</li>
+        </ul>
+    </OptLink>
+</div>
 <div>Bengaluru</div>
 <div>Login</div>
 </nav>
@@ -28,12 +48,8 @@ import "./style.css"
         font-size: large;
     }
     #navbar-opts {
-        list-style: none;
         display: flex;
-        gap: 30px;
         font-size: large;
-        & > li {
-            display: inline;
-        }
     }
 </style>
+<script src="./script.js"></script>
