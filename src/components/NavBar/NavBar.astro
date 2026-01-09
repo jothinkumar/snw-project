@@ -1,0 +1,39 @@
+---
+import OptLink from "./OptLink.astro"
+import "./style.css"
+---
+
+<nav>
+<h1>My Real Estate</h1>
+<ul id="navbar-opts">
+    <OptLink data="buy">Buy</OptLink>
+    <OptLink data="sell">Sell</OptLink>
+    <OptLink data="rent">Rent</OptLink>
+</ul>
+<div>Bengaluru</div>
+<div>Login</div>
+</nav>
+<style>
+    h1 {
+        font-family: cursive;
+    }
+    nav {
+        background-color: black;
+        color: white;
+        display: grid;
+        grid-template-columns: repeat(4,auto);
+        align-items: center;
+        justify-items: center;
+        font-family: monospace;
+        font-size: large;
+    }
+    #navbar-opts {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+        font-size: large;
+        & > li {
+            display: inline;
+        }
+    }
+</style>

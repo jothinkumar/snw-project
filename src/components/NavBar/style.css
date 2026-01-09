@@ -1,0 +1,10 @@
+.navbar-opt {
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color .5s;
+
+    &:hover {
+        color: green;
+    }
+}
