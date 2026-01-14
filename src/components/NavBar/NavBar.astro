@@ -54,8 +54,8 @@ import "./style.css"
     }}>
     </OptLink>
 </div>
-<div>Bengaluru</div>
-<div>Login</div>
+<div id="city-choose">Bengaluru</div>
+<div id="login">Login</div>
 </nav>
 <style>
     h1 {
@@ -74,6 +74,15 @@ import "./style.css"
     #navbar-opts {
         display: flex;
         font-size: large;
+    }
+    @media (orientation: portrait) {
+        #login,#city-choose {
+            display: none;
+        }
+        nav {
+            grid-template-columns: unset;
+            grid-template-rows: auto auto;
+        }
     }
 </style>
 <script src="./script.js"></script>

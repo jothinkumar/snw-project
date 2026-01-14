@@ -7,4 +7,10 @@ Array.from(document.getElementsByClassName('navbar-opt')).forEach(element => {
     const hide =()=>hoverWindow.style.display="none"
     element.addEventListener("mouseover",show)
     parent.addEventListener("mouseleave",hide)
+    element.addEventListener("click",show)
+    document.addEventListener("click",(evt)=>{         
+        if (evt.target !== element) {
+            hide();
+        }
+    })
 });
