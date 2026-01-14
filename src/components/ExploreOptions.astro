@@ -1,0 +1,37 @@
+---
+const { title, desc } = Astro.props;
+---
+
+<div class="option">
+    <img src="/test-img.png" alt="Test Image" />
+    <h2>{title}</h2>
+    <p>{desc}</p>
+</div>
+<style>
+    .option {
+        border: 1px solid gray;
+        padding: 20px;
+        border-radius: 5px;
+        background-color: azure;
+        transition: 2s;
+        width: min-content;
+        &:hover {
+            background-color: lightblue;
+            cursor: pointer;
+        }
+    }
+    .option > img:hover {
+        transform: scale(1.05);
+        transition: 1s;
+    }
+    .option>img {
+        max-width: 40dvw;
+        border: black 1px solid;
+        border-radius: 5px;
+    }
+    @media (orientation: portrait) {
+        .option>img {
+            max-width: 80dvw;
+        }
+    }
+</style>
