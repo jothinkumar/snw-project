@@ -5,7 +5,7 @@ const {data,options}=Astro.props
     {Object.keys(options).map(key=>
         <div class="hover-window-sub">
             <span class="hover-window-sub-key">{key}</span>
-            {options[key].map(lol=><span class="hover-window-sub-vals">{lol}</span>)}
+            {options[key].map(lol=><a class="hover-window-sub-vals" href={lol[1]}>{lol[0]}</a>)}
         </div>
     )}
 </div>

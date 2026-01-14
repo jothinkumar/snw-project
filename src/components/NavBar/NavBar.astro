@@ -7,19 +7,50 @@ import "./style.css"
 <h1>My Real Estate</h1>
 <div id="navbar-opts">
     <OptLink data="buy" name="Buy" options={{
-        "Apartment":["3 BHK","4 BHK"],
-        "Land":["100 Sq.ft","200 Sq.ft","500 Sq.ft","1000 Sq.ft"],
-        "Car":["Petrol","Diesel","EV"],
+        "Apartment":[
+            ["3 BHK","buy-apartment-3-BHK"],
+            ["4 BHK","buy-apartment-4-BHK"],
+        ],
+        "Land":[
+            ["100 Sq.ft","buy-land-100-sqft"],
+            ["200 Sq.ft","buy-land-200-sqft"],
+            ["500 Sq.ft","buy-land-500-sqft"],
+            ["1000 Sq.ft","buy-land-1000-sqft"],
+        ],
+        "Car":[
+            ["Petrol","buy-car-petrol"],
+            ["Diesel","buy-car-diesel"],
+            ["EV","buy-car-EV"],
+        ],
     }}>
     </OptLink>
     <OptLink data="sell" name="Sell" options={{
-        "Apartment":["3 BHK","4 BHK"],
-        "Land":["100 Sq.ft","200 Sq.ft","500 Sq.ft","1000 Sq.ft"],
-        "Car":["Petrol","Diesel","EV"],
+        "Apartment":[
+            ["3 BHK","sell-apartment-3-BHK"],
+            ["4 BHK","sell-apartment-4-BHK"],
+        ],
+        "Land":[
+            ["100 Sq.ft","sell-land-100-sqft"],
+            ["200 Sq.ft","sell-land-200-sqft"],
+            ["500 Sq.ft","sell-land-500-sqft"],
+            ["1000 Sq.ft","sell-land-1000-sqft"],
+        ],
+        "Car":[
+            ["Petrol","sell-car-petrol"],
+            ["Diesel","sell-car-diesel"],
+            ["EV","sell-car-EV"],
+        ],
     }}>
     </OptLink>
     <OptLink data="rent" name="Rent" options={{
-        "Apartment":["3 BHK (no balcony)","3 BHK (with balcony)"],
+        "Apartment":[
+            ["2 BHK (no balcony)","rent-apartment-2-BHK-no-balcony"],
+            ["2 BHK (with balcony)","rent-apartment-2-BHK-with-balcony"],
+            ["3 BHK (no balcony)","rent-apartment-3-BHK-no-balcony"],
+            ["3 BHK (with balcony)","rent-apartment-3-BHK-with-balcony"],
+            ["4 BHK (no balcony)","rent-apartment-4-BHK-no-balcony"],
+            ["4 BHK (with balcony)","rent-apartment-4-BHK-with-balcony"],
+        ]
     }}>
     </OptLink>
 </div>
