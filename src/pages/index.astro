@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Testimonial from '../components/Testimonial.astro';
 ---
 
 <Layout>
@@ -8,6 +9,11 @@ import Layout from '../layouts/Layout.astro';
         <div style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;display: flex;align-items: center;justify-content: center;z-index: 1; flex-direction: column;">
             <h2 style="font-size: xx-large; color: white;">Real Estate Made Easy</h2>
             <a id="req-callback" href="/request-callback">Request a callback</a>
+            <div id="testimonials">
+                <Testimonial content="Hello world. This is a testimonial" author="Someone" />
+                <Testimonial content="I'm a happy customer!" author="Someone else" />
+                <Testimonial content="Great service!" author="idk" />
+            </div>
         </div>
     </main>
 </Layout>
@@ -25,6 +31,17 @@ import Layout from '../layouts/Layout.astro';
         &:hover {
             scale: 1.05;
             transition: 0.5s;
+        }
+    }
+    #testimonials {
+        margin-top: 20px;
+        gap: 5px;
+        display: flex;
+        max-width: 80dvw;
+    }
+    @media (orientation: portrait) {
+        #testimonials {
+            flex-direction: column;
         }
     }
 </style>
