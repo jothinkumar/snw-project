@@ -1,0 +1,30 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+    <main style="margin-top: 15dvh;align-items: center;display: flex;flex-direction: column;align-items: center;">
+        <h1>Request a Callback</h1>
+        <form>
+            <div class="lol">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
+            </div>
+            <div class="lol">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+            </div>
+            <div class="lol">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required />
+            </div>
+            <button type="submit" style="border: none;background: green;color: white; padding:10px;border-radius: 10px;cursor:pointer">Request Callback</button>
+        </form>
+    </main>
+</Layout>
+
+<style>
+    .lol {
+        margin-bottom: 12px;
+    }
+</style>
