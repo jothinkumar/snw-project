@@ -4,7 +4,7 @@ import "./style.css"
 ---
 
 <nav>
-<h1 onclick="location.href='/'">My Real Estate</h1>
+<h1 onclick="location.href='/'" class="mouse-pointer">My Real Estate</h1>
 <div id="navbar-opts">
     <OptLink data="buy" name="Buy" options={{
         "Apartment":[
@@ -55,7 +55,7 @@ import "./style.css"
     </OptLink>
 </div>
 <div id="city-choose">Bengaluru</div>
-<div id="login" onclick="location.href='/login'">Login</div>
+<div id="login" onclick="location.href='/login'" class="mouse-pointer">Login</div>
 </nav>
 <style>
     h1 {
@@ -85,6 +85,13 @@ import "./style.css"
         nav {
             grid-template-columns: unset;
             grid-template-rows: auto auto;
+        }
+    }
+    .mouse-pointer {
+        cursor: pointer;
+        &:hover {
+            scale: 1.05;
+            transition: scale 1s;
         }
     }
 </style>
