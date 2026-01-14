@@ -3,5 +3,28 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	
+	<main style="background-color: black; height:100dvh;overflow:hidden">
+        <img src="/home-cover-img.png" alt="Home Cover" style="min-height:100dvh;min-width: 100dvw;overflow: hidden">
+        <div style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;display: flex;align-items: center;justify-content: center;z-index: 1; flex-direction: column;">
+            <h2 style="font-size: xx-large; color: white;">Real Estate Made Easy</h2>
+            <a id="req-callback" href="/request-callback">Request a callback</a>
+        </div>
+    </main>
 </Layout>
+<style>
+    #req-callback {
+        background-color: blue;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px black;
+        cursor: pointer;
+        font-family: monospace;
+        text-decoration: none;
+        &:hover {
+            scale: 1.05;
+            transition: 0.5s;
+        }
+    }
+</style>
