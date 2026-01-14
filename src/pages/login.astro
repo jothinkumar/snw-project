@@ -1,0 +1,26 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+    <main style="margin-top: 15dvh;align-items: center;display: flex;flex-direction: column;align-items: center;">
+        <h1>Login</h1>
+        <form>
+            <div class="lol">
+                <label for="email">email:</label><br />
+                <input type="text" id="email" name="email" required />
+            </div>
+            <div class="lol">
+                <label for="password">password:</label><br />
+                <input type="text" id="password" name="password" required />
+            </div>
+            <button type="submit" style="border: none;background: green;color: white; padding:10px;border-radius: 10px;cursor:pointer">Login</button>
+        </form>
+    </main>
+</Layout>
+
+<style>
+    .lol {
+        margin-bottom: 12px;
+    }
+</style>
