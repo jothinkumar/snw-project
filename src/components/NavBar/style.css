@@ -22,3 +22,18 @@
     box-shadow: 0 0 2px black;
     display: none;
 }
+.hover-window-sub-key{
+    font-weight: bold;
+}
+.hover-window-sub>* {
+    display: block;
+}
+.hover-window-sub {
+    margin: 10px;
+}
+.hover-window-sub-vals {
+    cursor: pointer;
+    &:hover {
+        color: green;
+    }
+}

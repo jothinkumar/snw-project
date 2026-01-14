@@ -1,6 +1,11 @@
 ---
-const {data}=Astro.props
+const {data,options}=Astro.props
 ---
 <div class="hover-window-for-navbar" id={`navbar-${data}-hoverwindow`}>
-    <slot></slot>
+    {Object.keys(options).map(key=>
+        <div class="hover-window-sub">
+            <span class="hover-window-sub-key">{key}</span>
+            {options[key].map(lol=><span class="hover-window-sub-vals">{lol}</span>)}
+        </div>
+    )}
 </div>

@@ -1,13 +1,13 @@
 ---
 import HoverWindow from "./HoverWindow.astro"
-const {data,name}=Astro.props
+const {data,name,options}=Astro.props
 ---
 
 <div id={`navbar-${data}-parent`}>
     <div class="navbar-opt" id={`navbar-${data}`}>
     {name}
     </div>
-<HoverWindow data={data}>
+<HoverWindow data={data} options={options}>
     <slot></slot>
 </HoverWindow>
 </div>

@@ -6,28 +6,21 @@ import "./style.css"
 <nav>
 <h1>My Real Estate</h1>
 <div id="navbar-opts">
-    <OptLink data="buy" name="Buy">
-        <ul>
-            <li>Houses</li>
-            <li>Flats</li>
-            <li>Apartments</li>
-            <li>Cars</li>
-        </ul>
+    <OptLink data="buy" name="Buy" options={{
+        "Apartment":["3 BHK","4 BHK"],
+        "Land":["100 Sq.ft","200 Sq.ft","500 Sq.ft","1000 Sq.ft"],
+        "Car":["Petrol","Diesel","EV"],
+    }}>
     </OptLink>
-    <OptLink data="sell" name="Sell">
-        <ul>
-            <li>Houses</li>
-            <li>Flats</li>
-            <li>Apartments</li>
-            <li>Cars</li>
-        </ul>
+    <OptLink data="sell" name="Sell" options={{
+        "Apartment":["3 BHK","4 BHK"],
+        "Land":["100 Sq.ft","200 Sq.ft","500 Sq.ft","1000 Sq.ft"],
+        "Car":["Petrol","Diesel","EV"],
+    }}>
     </OptLink>
-    <OptLink data="rent" name="Rent">
-        <ul>
-            <li>Houses</li>
-            <li>Flats</li>
-            <li>Apartments</li>
-        </ul>
+    <OptLink data="rent" name="Rent" options={{
+        "Apartment":["3 BHK (no balcony)","3 BHK (with balcony)"],
+    }}>
     </OptLink>
 </div>
 <div>Bengaluru</div>
